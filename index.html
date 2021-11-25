@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+
+<body class="bg-white">
+    <div class="cards-container">
+        <div class="row">
+            <div class="col-md-12 content-card" id="aboutme">
+                <h2><a href="./index.html#aboutme-container">About</a></h2>
+            </div>
+            <div class="col-md-12 content-card" id="education">
+                <h2><a href="./index.html#education-container">Education</a></h2>
+            </div>
+            <div class="col-md-12 content-card" id="work">
+                <h2><a href="./index.html#work-container">Work</a></h2>
+            </div>
+            <div class="col-md-12 content-card" id="contact">
+                <h2><a href="./index.html#social-links-container">Contact</a></h2>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="card-container" id="aboutme-container">
+        <img src="./profile.png" alt="profile" class="picture">
+        <article>
+            <h2>Hi there, this is Aditya Sai</h2>
+            <p><strong>Date of birth:</strong> 2 November, 2001</p>
+            <p><strong>Birth Place:</strong> Nellore</p>
+            <p><strong>GMail Id:</strong> singamsettyaditya@gmail.com</p>
+        </article>
+        <article>
+            <p>I like to keep a clean workspace and create a logical filing method so I’m always able to find what I need.</p>
+            <p>I am results oriented, constantly checking in with the goal to determine how close or how far away we are and what it will take to make it happen.</p>
+        </article>
+    </div>
+    <div class="card-container" id="education-container">
+        <article>
+            <h2>My Education</h2>
+            <p><strong>Primary Education:</strong> KKR's Gowtham</p>
+            <p><strong>secondary Education:</strong> KKR's Gowtham</p>
+            <p><strong>Higher secondary Education:</strong> Sri Chaitanya Educations</p>
+            <p><strong>Undergraduation:</strong> Bachelors of Technology, VIT Vellore, Vellore</p>
+            <p><strong>Department:</strong> Computer Science</p>
+            <p><strong>Specialisation:</strong> Information Security</p>
+        </article>
+    </div>
+    <div class="card-container" id="work-container">
+        <article>
+            <h2>My work</h2>
+            <div id="projects" class="row">
+                <div class="project" id="project-1">
+                    <h4>Title</h4>
+                    <h4 class="title">Under Water Image Enhancement</h4>
+                    <h4>Field</h4>
+                    <h4 class="title">Python</h4>
+                </div>
+                <div class="project">
+                    <h4>Title</h4>
+                    <h4 class="title">Face Recognition Using Deep Learning</h4>
+                    <h4>Field</h4>
+                    <h4 class="title">Artificial Intelligence</h4>
+                </div>
+                <div class="project">
+                    <h4>Title</h4>
+                    <h4 class="title">Cargo Management System</h4>
+                    <h4>Field</h4>
+                    <h4 class="title">Web Development</h4>
+                </div>
+            </div>
+        </article>
+    </div>
+
+
+
+
+
+    <div class="social-links" id="social-links-container">
+        <h3>Get in touch with me</h3>
+        <div class="links">
+            <div class="row">
+                <div class="col-md-4 offset-md-5 social-card" id="ldn">
+                    <i class="fa fa-linkedin-square"></i>
+                    <a href="https://www.linkedin.com/in/aditya-sai-4a4a52226">
+                        <div class="name" id="name-ldn">LinkedIn</div>
+                    </a>
+                </div>
+                <div class="col-md-4 offset-md-5 social-card" id="gm">
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:singamsettyaditya@gmail.com">
+                        <div class="name" id="name-gm">Gmail</div>
+                    </a>
+                </div>
+                <div class="col-md-4 offset-md-5 social-card" id="fb">
+                    <i class="fa fa-facebook"></i>
+                    <a href="https://www.facebook.com/aditya.singamsetty">
+                        <div class="name" id="name-fb">Facebook</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        ldn = document.getElementById("ldn")
+        name_ldn = document.getElementById("name-ldn")
+        ldn.addEventListener('mouseover', function (e) {
+            name_ldn.classList.add("ns")
+        })
+        ldn.addEventListener('mouseout', function (e) {
+            name_ldn.classList.remove("ns")
+        })
+
+        gm = document.getElementById("gm")
+        name_gm = document.getElementById("name-gm")
+        gm.addEventListener('mouseover', function (e) {
+            name_gm.classList.add("ns")
+        })
+        gm.addEventListener('mouseout', function (e) {
+            name_gm.classList.remove("ns")
+        })
+
+        fb = document.getElementById("fb")
+        name_fb = document.getElementById("name-fb")
+        fb.addEventListener('mouseover', function (e) {
+            name_fb.classList.add("ns")
+        })
+        fb.addEventListener('mouseout', function (e) {
+            name_fb.classList.remove("ns")
+        })
+    </script>
+</body>
+</html>
